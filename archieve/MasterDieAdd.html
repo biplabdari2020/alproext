@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Die Master</title>
+    <link rel="icon" href="../html/staticfiles/img/logo.png">
+	<link rel="stylesheet" href="../html/staticfiles/css/style.css">
+	<script src="../html/staticfiles/js/jquery-3.3.1.js"></script>
+	<script src="../html/staticfiles/js/reusable.js"></script>
+</head>
+
+<body>
+	<!-- Start : for menu bar -->
+	<div id="menu_bar"></div>
+	<!-- End for menu bar -->
+
+	<div class="myDiv">
+		<div class="container">
+			<div class="contact-form medium-padding120">
+				<form name="Form_DieCompMaster" method="post" action="Form_DieCompMaster.php">
+					<h2>Die Master</h2><br><br>
+					<INPUT type="button" class="myButton" value="Delete Row" onclick="delRow()" />
+					<INPUT type="button" class="myButton" value="Add Row" onclick="addRow()" /><br><br>
+					<table id="dataTable" border="2">
+						<tr>
+							<th></th>
+							<th>Section no</th>
+							<th>Die No</th>
+							<th>Press</th>
+							<th>Cavity</th>
+							<th>Alloy</th>
+							<th>Nominal Weight (wt/mtr)</th>
+							<th>Estimated Die Life</th>
+							<th>Estimated Die Trial</th>
+							<th>Nitriding Frequency</th>
+							<th>Last Run Weight (wt/mtr)</th>
+							<th>Manufactured by</th>
+						</tr>
+						<tr>
+							<td><INPUT type="checkbox" id="checkbox_id" /></td>
+							<td><input type="text" size="6" name="txtSectionNo" id="txtSectionNo" placeholder="" value="" required></td>
+							<td><input type="text" size="10" name="txtDieNo" id="txtDieNo" placeholder="" value="" required></td>
+							<td><input type="text" size="2" name="txtPress" id="txtPress" placeholder="" value="" required></td>
+							<td><input type="text" size="3" name="txtCavity" id="txtCavity" placeholder="" value="" required></td>
+							<td><input type="text" size="20" name="txtAlloy" id="txtAlloy" placeholder="" value="" required></td>
+							<td><input type="text" size="4" name="txtNormalWt" id="txtNormalWt" placeholder="" value="" required></td>
+							<td><input type="text" size="10" name="txtEstDieLife" id="txtEstDieLife" placeholder="" value="" required></td>
+							<td><input type="text" size="4" name="txtEstDieTrial" id="txtEstDieTrial" placeholder="" value="" required></td>
+							<td><input type="text" size="4" name="txtNitriFreq" id="txtNitriFreq" placeholder="" value="" required></td>
+							<td><input type="text" size="6" name="txtLastRunWt" id="txtLastRunWt" placeholder="" value="" required></td>
+							<td><input type="text" name="txtManBy" id="txtManBy" placeholder="" value="" required></td>
+						</tr>
+					</table>
+					<br><br>
+					<input type="submit" name="Submit" id="Submit" value="Submit" class="submit-btn">
+					<br><br>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

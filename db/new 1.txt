@@ -1,0 +1,30 @@
+user id = alproapplication
+password= 2N@$CH2X72KanZPKM5S5
+
+
+SQL: BEGIN imlight#.export_magic(pi_namespace => :PARAM1); END;
+ORA-20999: Unexpected error to log error on export magic :
+ORA-20999: EAN recipient "" not found !
+ORA-01403: no data found
+ORA-20999: Assertion failed :
+A export frequency is requied!
+Expected not NULL, got NULL!
+ORA-06512: at "NESSOFT.LIB_ERROR#", line 66
+ORA-06512: at "NESSOFT.LIB_ERROR#", line 86
+ORA-06512: at "NESSOFT.LIB_ASSERT#", line 18
+ORA-06512: at "NESSOFT.LIB_ASSERT#", line 53
+ORA-06512: at "NESSOFT.LIB_ASSERT#", line 156
+ORA-06512: at "NESSOFT.IMLIGHT#", line 392
+ORA-06512: at "NESSOFT.IMLIGHT#", line 450
+ORA-06512: at "NESSOFT.IMLIGHT#", line 1573
+ORA
+ORA-20999: EAN recipient "" not found !
+ORA-01403: no data found
+ORA-20999: Assertion failed :
+A export frequency is requied!
+Expected not NULL, got NULL!
+ORA-06512: at "NESSOFT.LIB_ERROR#", line 66
+ORA-06512: at "NESSOFT.LIB_ERROR#", line 86
+ORA-06512: at "NESSOFT.LIB_ASSERT#", line 18
+ORA-06512: at "NESSOFT.LIB_ASSERT#", line 53
+ORA-06512: at "NESSOFT.LIB_ASSE

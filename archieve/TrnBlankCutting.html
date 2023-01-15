@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blank Cutting Data Entry</title>
+	<link rel="icon" href="../html/staticfiles/img/logo.png">
+	<link rel="stylesheet" href="../html/staticfiles/css/style.css">
+	<script src="../html/staticfiles/js/jquery-3.3.1.js"></script>
+	<script src="../html/staticfiles/js/reusable.js"></script>
+</head>
+
+<body>
+	<!-- Start : for menu bar -->
+	<div id="menu_bar"></div>
+	<!-- End for menu bar -->
+
+	<div class="myDiv">
+		<div class="container">
+			<div class="contact-form medium-padding120">
+				<form name="TrnBlankCuttingAdd" method="post" action="../php/TrnBlankCuttingAdd.php">
+					<h2>Blank Cutting Data Entry</h2><br><br>
+					<INPUT type="button" class="myButton" value="Delete Row" onclick="delRow()" />
+					<INPUT type="button" class="myButton" value="Add Row" onclick="addRow()" /><br><br>
+					<table id="dataTable" border="2">
+						<tr>
+							<th></th>
+							<th>Log No</th>
+							<th>Operator</th>
+							<th>Shift</th>
+							<th>Cutting Length (mm)/Mtr</th>
+							<th>Start Date/Time</th>
+							<th>End Date/Time</th>
+							<th>Release</th>
+						</tr>
+						<tr>
+							<td><INPUT type="checkbox" name="checkbox_name" id="checkbox_id" /></td>
+							<td>
+								<select name="txtLogNo" id="txtLogNo">
+									<option value="0">--Select--</option>
+									<option value="AB/210">AB/210</option>
+									<option value="AB/211">AB/211</option>
+									<option value="AB/212">AB/212</option>
+									<option value="AB/213">AB/213</option>
+									</select>
+								
+							</td>
+							
+							<td>
+								<input type="text" name="txtOperatorCode" id="txtOperatorCode" placeholder=""
+									value="" required>
+							</td>
+							<td>								
+									<select name="txtShift" id="txtShift">
+									<option value="A">A</option>
+									<option value="B">B</option>
+									<option value="C">C</option>
+									<option value="G">D</option>
+									</select>
+							</td>
+							<td>
+								<input type="txtMessage" name="numCuttingLength" id="numCuttingLength" placeholder=""
+									value="" required>
+							</td>
+							<td>
+								<input type="datetime-local" name="dtStartTime" id="dtStartTime" placeholder="" value=""
+									required>
+							</td>
+							<td>
+								<input type="datetime-local" name="dtEndTime" id="dtEndTime" placeholder="" value=""
+									required>
+							</td>
+							<td>
+								<input type="checkbox" name="txtReleaseFlag" id="txtReleaseFlag" placeholder="" value=""
+									>
+							</td>
+						</tr>
+					</table>
+					<br><br>
+					<input type="submit" name="Submit" id="Submit" value="Submit" class="submit-btn">
+					<br><br>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

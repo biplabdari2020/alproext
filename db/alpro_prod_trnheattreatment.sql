@@ -1,0 +1,61 @@
+-- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
+--
+-- Host: localhost    Database: alpro_prod
+-- ------------------------------------------------------
+-- Server version	8.0.30
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `trnheattreatment`
+--
+
+DROP TABLE IF EXISTS `trnheattreatment`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `trnheattreatment` (
+  `pk_HeatTrtID` varchar(30) NOT NULL,
+  `pkTRLogsheet` varchar(20) NOT NULL,
+  `fk_trnbclogsheet` varchar(20) NOT NULL,
+  `txtDieNo` varchar(20) DEFAULT NULL,
+  `txtCompCode` varchar(20) DEFAULT NULL,
+  `dtSentDate` datetime DEFAULT NULL,
+  `txtHTType` varchar(45) DEFAULT NULL,
+  `dtRecvDate` datetime DEFAULT NULL,
+  `numFinalHardness` decimal(6,2) DEFAULT NULL,
+  `dtDateTime` datetime DEFAULT CURRENT_TIMESTAMP,
+  `txtVendor` varchar(45) DEFAULT NULL,
+  `numCompWt` decimal(6,2) DEFAULT NULL,
+  PRIMARY KEY (`pk_HeatTrtID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `trnheattreatment`
+--
+
+LOCK TABLES `trnheattreatment` WRITE;
+/*!40000 ALTER TABLE `trnheattreatment` DISABLE KEYS */;
+INSERT INTO `trnheattreatment` VALUES ('2209191009442015/16DI','TR/20220919/0004','BC/20220914/0001','2015/16','DI',NULL,'',NULL,0.00,'2022-09-19 23:32:06','Vendor1',0.00),('2209191109173500/1BR','TR/20220919/0003','BC/20220914/0002','3500/1','BR',NULL,'',NULL,0.00,'2022-09-19 23:32:06','Vendor2',0.00),('2209191109573500/1BR','TR/20220919/0002','BC/20220914/0002','3500/1','BR','2022-09-20 04:12:00','1','2022-09-22 01:39:00',3.56,'2022-09-19 23:32:57',NULL,NULL),('2209211109553500/1BR','TR/20220919/0001','BC/20220914/0002','3500/1','BR','2022-09-24 01:24:00','1','2022-09-24 01:24:00',0.00,'2022-09-21 23:02:55',NULL,NULL);
+/*!40000 ALTER TABLE `trnheattreatment` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-01-12 18:05:05
